@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.0...v1.0.1) (2024-08-22)
+
+
+### Bug Fixes
+
+* fix docker versions ([#15](https://github.com/jkrivas/k8s-ha-git-sync/issues/15)) ([9dd56cf](https://github.com/jkrivas/k8s-ha-git-sync/commit/9dd56cfc9bdf21830743f0d8b0186581c81ef47c))
+
 ## 1.0.0 (2024-08-22)
 
 
