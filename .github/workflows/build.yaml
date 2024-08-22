@@ -58,8 +58,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=semver,pattern={{major}}.{{minor}},value=${{ steps.release-please.outputs.major_version }}.${{ steps.release-please.outputs.minor_version }}
-            type=semver,pattern={{version}},value=${{ steps.release-please.outputs.tag_name }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ needs.release-please.outputs.major_version }}.${{ needs.release-please.outputs.minor_version }}
+            type=semver,pattern={{version}},value=${{ needs.release-please.outputs.tag_name }}
             type=sha
 
       - name: Build and push Docker image
