@@ -19,9 +19,9 @@ jobs:
       pull-requests: write
     outputs:
       release_created: ${{ steps.release-please.outputs.release_created }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
-      major_version: ${{ steps.release.outputs.major_version }}
-      minor_version: ${{ steps.release.outputs.minor_version }}
+      tag_name: ${{ steps.release-please.outputs.tag_name }}
+      major_version: ${{ steps.release-please.outputs.major_version }}
+      minor_version: ${{ steps.release-please.outputs.minor_version }}
     steps:
       - uses: googleapis/release-please-action@v4
         id: release-please
