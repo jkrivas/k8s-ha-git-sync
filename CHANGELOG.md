@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.2...v1.0.3) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update kubernetes packages to v0.31.0 ([#8](https://github.com/jkrivas/k8s-ha-git-sync/issues/8)) ([abde643](https://github.com/jkrivas/k8s-ha-git-sync/commit/abde64392e35f40acaba114fe11952a18def3234))
+
 ## [1.0.2](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.1...v1.0.2) (2024-08-22)
 
 
