@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.4](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.3...v1.0.4) (2024-09-27)
+
+
+### Bug Fixes
+
+* **deps:** update kubernetes packages to v0.31.1 ([#25](https://github.com/jkrivas/k8s-ha-git-sync/issues/25)) ([5578f16](https://github.com/jkrivas/k8s-ha-git-sync/commit/5578f167cf6ee1316c680c0b4ebe39b85d0521ae))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.2 ([#21](https://github.com/jkrivas/k8s-ha-git-sync/issues/21)) ([441e752](https://github.com/jkrivas/k8s-ha-git-sync/commit/441e7528224a81d1c27e5499e839b6145e35369b))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.3 ([#23](https://github.com/jkrivas/k8s-ha-git-sync/issues/23)) ([aeb02e9](https://github.com/jkrivas/k8s-ha-git-sync/commit/aeb02e9bf6690741bdd2a92bf0def9fcd590fdc2))
+* **deps:** update module github.com/prometheus/client_golang to v1.20.4 ([#27](https://github.com/jkrivas/k8s-ha-git-sync/issues/27)) ([748c337](https://github.com/jkrivas/k8s-ha-git-sync/commit/748c33786bc7e8e7e05ed76258fc9e2f87481325))
+
 ## [1.0.3](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.2...v1.0.3) (2024-08-22)
 
 
