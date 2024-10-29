@@ -4,7 +4,7 @@ go 1.22.3
 
 require (
 	github.com/gogs/git-module v1.8.3
-	github.com/prometheus/client_golang v1.20.4
+	github.com/prometheus/client_golang v1.20.5
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.4
 	k8s.io/apimachinery v0.31.2
