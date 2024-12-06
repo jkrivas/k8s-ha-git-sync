@@ -10,7 +10,7 @@ COPY . ./
 RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o sync ./cmd/main
 
 # Final stage
-FROM --platform=$TARGETPLATFORM alpine:3.20
+FROM --platform=$TARGETPLATFORM alpine:3.21
 WORKDIR /app
 
 COPY --from=build /app/sync .
