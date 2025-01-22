@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.4...v1.0.5) (2025-01-22)
+
+
+### Bug Fixes
+
+* **deps:** bump golang.org/x/net from 0.26.0 to 0.33.0 ([#44](https://github.com/jkrivas/k8s-ha-git-sync/issues/44)) ([cfd60da](https://github.com/jkrivas/k8s-ha-git-sync/commit/cfd60da465e0e94b8bfeb0d970768e289ac4bf0f))
+* **deps:** update kubernetes packages to v0.32.1 ([#38](https://github.com/jkrivas/k8s-ha-git-sync/issues/38)) ([9bcd38f](https://github.com/jkrivas/k8s-ha-git-sync/commit/9bcd38f4ce10a4bf4a891b7fdaa55a846b7665ba))
+* **deps:** update module github.com/gogs/git-module to v1.8.4 ([#41](https://github.com/jkrivas/k8s-ha-git-sync/issues/41)) ([236ea55](https://github.com/jkrivas/k8s-ha-git-sync/commit/236ea5508c2c0756ed6031eea5c03eca90841816))
+
 ## [1.0.4](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.3...v1.0.4) (2024-10-29)
 
 
