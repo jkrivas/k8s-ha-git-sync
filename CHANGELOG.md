@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.5...v1.0.6) (2025-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.23.6 ([#50](https://github.com/jkrivas/k8s-ha-git-sync/issues/50)) ([ad02551](https://github.com/jkrivas/k8s-ha-git-sync/commit/ad02551619e4e6b9b48a550c15edf0997b1cd61d))
+
 ## [1.0.5](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.4...v1.0.5) (2025-01-22)
 
 
