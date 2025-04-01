@@ -2,7 +2,7 @@ module github.com/jkrivas/k8s-ha-git-sync
 
 go 1.23.0
 
-toolchain go1.24.0
+toolchain go1.24.2
 
 require (
 	github.com/gogs/git-module v1.8.4
