@@ -8,7 +8,7 @@ require (
 	github.com/gogs/git-module v1.8.4
 	github.com/prometheus/client_golang v1.22.0
 	github.com/sirupsen/logrus v1.9.3
-	github.com/urfave/cli/v2 v2.27.6
+	github.com/urfave/cli/v3 v3.3.3
 	k8s.io/apimachinery v0.33.1
 )
 
@@ -59,9 +59,6 @@ require (
 )
 
 require (
-	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	k8s.io/api v0.33.1 // indirect
 	k8s.io/client-go v0.33.1
 )
