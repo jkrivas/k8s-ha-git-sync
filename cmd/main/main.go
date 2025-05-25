@@ -1,13 +1,14 @@
 package main
 
 import (
+	"context"
 	"os"
 
 	"github.com/jkrivas/k8s-ha-git-sync/internal/app/k8s-ha-git-sync"
 	"github.com/jkrivas/k8s-ha-git-sync/internal/pkg/config"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v3"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 
 	cfg := config.Config{}
 
-	cmd := &cli.App{
+	cmd := &cli.Command{
 		Name:            "k8s-ha-git-sync",
 		Usage:           "Synchronize Kubernetes deployed Home Assistant configuration with Git repository",
 		HideHelpCommand: true,
@@ -25,7 +26,7 @@ func main() {
 				Name:        "interval",
 				Usage:       "Interval in seconds between synchronizations",
 				Value:       60,
-				EnvVars:     []string{"INTERVAL"},
+				Sources:     cli.EnvVars("INTERVAL"),
 				Destination: &cfg.Interval,
 			},
 			&cli.StringFlag{
@@ -33,7 +34,7 @@ func main() {
 				Category:    "Home Assistant",
 				Usage:       "Path to the Home Assistant configuration directory",
 				Value:       "/homeassistant",
-				EnvVars:     []string{"CONFIG_PATH"},
+				Sources:     cli.EnvVars("CONFIG_PATH"),
 				Destination: &cfg.HomeAssistant.ConfigPath,
 			},
 			&cli.StringFlag{
@@ -41,14 +42,14 @@ func main() {
 				Category:    "Home Assistant",
 				Usage:       "URL of the Home Assistant instance",
 				Value:       "http://homeassistant:8123",
-				EnvVars:     []string{"HA_URL"},
+				Sources:     cli.EnvVars("HA_URL"),
 				Destination: &cfg.HomeAssistant.Url,
 			},
 			&cli.StringFlag{
 				Name:        "ha-token",
 				Category:    "Home Assistant",
 				Usage:       "Long-Lived Access Token for the Home Assistant instance",
-				EnvVars:     []string{"HA_TOKEN"},
+				Sources:     cli.EnvVars("HA_TOKEN"),
 				Required:    true,
 				Destination: &cfg.HomeAssistant.Token,
 			},
@@ -56,14 +57,14 @@ func main() {
 				Name:        "git-ssh-key-path",
 				Category:    "Git",
 				Usage:       "Path to the SSH key for Git authentication",
-				EnvVars:     []string{"GIT_SSH_KEY_PATH"},
+				Sources:     cli.EnvVars("GIT_SSH_KEY_PATH"),
 				Destination: &cfg.Git.SshKeyPath,
 			},
 			&cli.StringFlag{
 				Name:        "git-token",
 				Category:    "Git",
 				Usage:       "Token for Git authentication",
-				EnvVars:     []string{"GIT_TOKEN"},
+				Sources:     cli.EnvVars("GIT_TOKEN"),
 				Destination: &cfg.Git.Token,
 			},
 			&cli.StringFlag{
@@ -71,7 +72,7 @@ func main() {
 				Category:    "Kubernetes",
 				Usage:       "Name of the Home Assistant deployment namespace in Kubernetes",
 				Value:       "default",
-				EnvVars:     []string{"KUBE_NAMESPACE"},
+				Sources:     cli.EnvVars("KUBE_NAMESPACE"),
 				Destination: &cfg.Kubernetes.Namespace,
 			},
 			&cli.StringFlag{
@@ -79,7 +80,7 @@ func main() {
 				Category:    "Kubernetes",
 				Usage:       "Name of the Home Assistant deployment in Kubernetes",
 				Value:       "homeassistant",
-				EnvVars:     []string{"KUBE_DEPLOYMENT"},
+				Sources:     cli.EnvVars("KUBE_DEPLOYMENT"),
 				Destination: &cfg.Kubernetes.Deployment,
 			},
 			&cli.BoolFlag{
@@ -87,7 +88,7 @@ func main() {
 				Category:    "Metrics",
 				Usage:       "Enable Prometheus metrics",
 				Value:       false,
-				EnvVars:     []string{"METRICS"},
+				Sources:     cli.EnvVars("METRICS"),
 				Destination: &cfg.Metrics.Enabled,
 			},
 			&cli.IntFlag{
@@ -95,27 +96,27 @@ func main() {
 				Category:    "Metrics",
 				Usage:       "Port for Prometheus metrics",
 				Value:       8080,
-				EnvVars:     []string{"METRICS_PORT"},
+				Sources:     cli.EnvVars("METRICS_PORT"),
 				Destination: &cfg.Metrics.Port,
 			},
 		},
-		Before: func(c *cli.Context) error {
-			if c.String("git-ssh-key-path") == "" && c.String("git-token") == "" {
+		Before: func(ctx context.Context, cmd *cli.Command) (context.Context, error) {
+			if cmd.String("git-ssh-key-path") == "" && cmd.String("git-token") == "" {
 				log.Fatal("one of --git-ssh-key-path or --git-token must be provided")
 			}
 
-			if c.String("git-ssh-key-path") != "" && c.String("git-token") != "" {
+			if cmd.String("git-ssh-key-path") != "" && cmd.String("git-token") != "" {
 				log.Fatal("only one of --git-ssh-key-path or --git-token must be provided")
 			}
-			return nil
+			return nil, nil
 		},
-		Action: func(ctx *cli.Context) error {
+		Action: func(ctx context.Context, cmd *cli.Command) error {
 			sync.Sync(&cfg)
 			return nil
 		},
 	}
 
-	if err := cmd.Run(os.Args); err != nil {
+	if err := cmd.Run(context.Background(), os.Args); err != nil {
 		log.Fatal(err)
 	}
 }
