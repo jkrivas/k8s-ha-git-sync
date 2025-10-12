@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.10](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.9...v1.0.10) (2025-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.25.2 ([#98](https://github.com/jkrivas/k8s-ha-git-sync/issues/98)) ([294bfa2](https://github.com/jkrivas/k8s-ha-git-sync/commit/294bfa290e6ef0f502b5bd67d647c8ef27a404f8))
+* **deps:** update kubernetes packages to v0.34.1 ([#95](https://github.com/jkrivas/k8s-ha-git-sync/issues/95)) ([f4856bd](https://github.com/jkrivas/k8s-ha-git-sync/commit/f4856bd39605cd2ca3e81744b0c84a9bf77cb3da))
+* **deps:** update module github.com/prometheus/client_golang to v1.23.2 ([#94](https://github.com/jkrivas/k8s-ha-git-sync/issues/94)) ([d48ec59](https://github.com/jkrivas/k8s-ha-git-sync/commit/d48ec5973d3291d2284308cb239eeb49d296f0cd))
+
 ## [1.0.9](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.8...v1.0.9) (2025-09-04)
 
 
