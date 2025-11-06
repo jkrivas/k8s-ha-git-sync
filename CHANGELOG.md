@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.11](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.10...v1.0.11) (2025-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.25.4 ([#101](https://github.com/jkrivas/k8s-ha-git-sync/issues/101)) ([6f93e31](https://github.com/jkrivas/k8s-ha-git-sync/commit/6f93e315eff55d0a6ea9bd047f981acf2f0bea49))
+* **deps:** update module github.com/urfave/cli/v3 to v3.5.0 ([#102](https://github.com/jkrivas/k8s-ha-git-sync/issues/102)) ([9d0fd5f](https://github.com/jkrivas/k8s-ha-git-sync/commit/9d0fd5f73aeed41eab870923ab3cc923ab311add))
+
 ## [1.0.10](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.9...v1.0.10) (2025-10-12)
 
 
