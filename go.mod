@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.5
 
 require (
-	github.com/gogs/git-module v1.8.4
+	github.com/gogs/git-module v1.8.5
 	github.com/prometheus/client_golang v1.23.2
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v3 v3.5.0
