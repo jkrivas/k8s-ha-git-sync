@@ -9,7 +9,7 @@ require (
 	github.com/prometheus/client_golang v1.23.2
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v3 v3.5.0
-	k8s.io/apimachinery v0.34.1
+	k8s.io/apimachinery v0.34.2
 )
 
 require (
@@ -60,6 +60,6 @@ require (
 )
 
 require (
-	k8s.io/api v0.34.1 // indirect
-	k8s.io/client-go v0.34.1
+	k8s.io/api v0.34.2 // indirect
+	k8s.io/client-go v0.34.2
 )
