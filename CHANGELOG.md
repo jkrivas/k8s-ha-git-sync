@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.12](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.11...v1.0.12) (2026-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update alpine docker tag to v3.23 ([#114](https://github.com/jkrivas/k8s-ha-git-sync/issues/114)) ([466cfb1](https://github.com/jkrivas/k8s-ha-git-sync/commit/466cfb116abadb5dae7806e9075fa70e9960e9b8))
+* **deps:** update golang docker tag to v1.25.5 ([#113](https://github.com/jkrivas/k8s-ha-git-sync/issues/113)) ([90d3c0c](https://github.com/jkrivas/k8s-ha-git-sync/commit/90d3c0c071993049f1e14d2176ec72e196ccbfa0))
+* **deps:** update golang docker tag to v1.26.0 ([#119](https://github.com/jkrivas/k8s-ha-git-sync/issues/119)) ([d6e19a0](https://github.com/jkrivas/k8s-ha-git-sync/commit/d6e19a05b43b9aa3bedce00936744f860647bbba))
+* **deps:** update kubernetes packages to v0.34.2 ([#107](https://github.com/jkrivas/k8s-ha-git-sync/issues/107)) ([2a88387](https://github.com/jkrivas/k8s-ha-git-sync/commit/2a883877858e6afdba82e93e5bf8a4d19c8f0c40))
+* **deps:** update kubernetes packages to v0.35.0 ([#116](https://github.com/jkrivas/k8s-ha-git-sync/issues/116)) ([77f4c4c](https://github.com/jkrivas/k8s-ha-git-sync/commit/77f4c4ce36db5f0ef2c4c429ab25ae53b09eba73))
+* **deps:** update kubernetes packages to v0.35.1 ([#124](https://github.com/jkrivas/k8s-ha-git-sync/issues/124)) ([6247434](https://github.com/jkrivas/k8s-ha-git-sync/commit/624743447ab0efc255f637067272bf7031a64bea))
+* **deps:** update module github.com/gogs/git-module to v1.8.5 ([#109](https://github.com/jkrivas/k8s-ha-git-sync/issues/109)) ([a24ed8a](https://github.com/jkrivas/k8s-ha-git-sync/commit/a24ed8aa51fb6c92ac821d0010c59a590355688c))
+* **deps:** update module github.com/gogs/git-module to v1.8.6 ([#123](https://github.com/jkrivas/k8s-ha-git-sync/issues/123)) ([02a805e](https://github.com/jkrivas/k8s-ha-git-sync/commit/02a805e1c677840ec91f2be422c64992b35187b6))
+* **deps:** update module github.com/sirupsen/logrus to v1.9.4 ([#117](https://github.com/jkrivas/k8s-ha-git-sync/issues/117)) ([05442b7](https://github.com/jkrivas/k8s-ha-git-sync/commit/05442b7bdc7e672500dbe6852b80f38b12170cec))
+* **deps:** update module github.com/urfave/cli/v3 to v3.6.1 ([#106](https://github.com/jkrivas/k8s-ha-git-sync/issues/106)) ([7a9d002](https://github.com/jkrivas/k8s-ha-git-sync/commit/7a9d002545de26c1d30c91cec68147805141d54b))
+* **deps:** update module github.com/urfave/cli/v3 to v3.6.2 ([#120](https://github.com/jkrivas/k8s-ha-git-sync/issues/120)) ([6e84e33](https://github.com/jkrivas/k8s-ha-git-sync/commit/6e84e33ce1e1b95a35c9392c7e09398642a75146))
+
 ## [1.0.11](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.10...v1.0.11) (2025-11-06)
 
 
