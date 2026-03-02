@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.13](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.12...v1.0.13) (2026-02-27)
+
+
+### Bug Fixes
+
+* **deps:** update kubernetes packages to v0.35.2 ([#129](https://github.com/jkrivas/k8s-ha-git-sync/issues/129)) ([855f414](https://github.com/jkrivas/k8s-ha-git-sync/commit/855f4141a0d0bb1d6a7605e5d04552889b77ba81))
+* **deps:** update module github.com/gogs/git-module to v1.8.7 ([#128](https://github.com/jkrivas/k8s-ha-git-sync/issues/128)) ([6692cd8](https://github.com/jkrivas/k8s-ha-git-sync/commit/6692cd858dd59ed549dc18629f16e11c030eff9b))
+
 ## [1.0.12](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.11...v1.0.12) (2026-02-11)
 
 
