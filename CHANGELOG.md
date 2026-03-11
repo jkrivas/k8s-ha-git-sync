@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.13](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.12...v1.0.13) (2026-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.26.1 ([#136](https://github.com/jkrivas/k8s-ha-git-sync/issues/136)) ([3cfbd85](https://github.com/jkrivas/k8s-ha-git-sync/commit/3cfbd853321c882965e667fa43ba96c841fd0739))
+* **deps:** update kubernetes packages to v0.35.2 ([#129](https://github.com/jkrivas/k8s-ha-git-sync/issues/129)) ([855f414](https://github.com/jkrivas/k8s-ha-git-sync/commit/855f4141a0d0bb1d6a7605e5d04552889b77ba81))
+* **deps:** update module github.com/gogs/git-module to v1.8.7 ([#128](https://github.com/jkrivas/k8s-ha-git-sync/issues/128)) ([6692cd8](https://github.com/jkrivas/k8s-ha-git-sync/commit/6692cd858dd59ed549dc18629f16e11c030eff9b))
+* **deps:** update module github.com/urfave/cli/v3 to v3.7.0 ([#131](https://github.com/jkrivas/k8s-ha-git-sync/issues/131)) ([5def8e9](https://github.com/jkrivas/k8s-ha-git-sync/commit/5def8e970c9175a7b887c12cf69704202a4a84b5))
+
 ## [1.0.12](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.11...v1.0.12) (2026-02-11)
 
 
