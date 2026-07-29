@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.17](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.16...v1.0.17) (2026-07-29)
+
+
+### Bug Fixes
+
+* **deps:** update kubernetes monorepo to v0.36.3 ([#168](https://github.com/jkrivas/k8s-ha-git-sync/issues/168)) ([07c19b0](https://github.com/jkrivas/k8s-ha-git-sync/commit/07c19b0de48acd05f230169ff5b002e28a84c6d9))
+* **deps:** update module github.com/gogs/git-module to v1.8.9 ([#165](https://github.com/jkrivas/k8s-ha-git-sync/issues/165)) ([f169864](https://github.com/jkrivas/k8s-ha-git-sync/commit/f16986439a083c6c99d3deec47c05f5a78be5bb2))
+* **deps:** update module github.com/prometheus/client_golang to v1.24.1 ([#167](https://github.com/jkrivas/k8s-ha-git-sync/issues/167)) ([21bea17](https://github.com/jkrivas/k8s-ha-git-sync/commit/21bea172a7608c47332aa5b1d9e1a5f786f044a4))
+
 ## [1.0.16](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.15...v1.0.16) (2026-07-10)
 
 
