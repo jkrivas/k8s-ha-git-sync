@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.17](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.16...v1.0.17) (2026-08-30)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.27.0 ([#173](https://github.com/jkrivas/k8s-ha-git-sync/issues/173)) ([5ad8a62](https://github.com/jkrivas/k8s-ha-git-sync/commit/5ad8a621a2c78d37732c1b9cc200c2a1ce14a7c1))
+* **deps:** update kubernetes monorepo to v0.36.3 ([#168](https://github.com/jkrivas/k8s-ha-git-sync/issues/168)) ([07c19b0](https://github.com/jkrivas/k8s-ha-git-sync/commit/07c19b0de48acd05f230169ff5b002e28a84c6d9))
+* **deps:** update kubernetes monorepo to v0.37.0 ([#175](https://github.com/jkrivas/k8s-ha-git-sync/issues/175)) ([250e3ab](https://github.com/jkrivas/k8s-ha-git-sync/commit/250e3abcbf4dbe67db24ef939694bf78173f49d4))
+* **deps:** update module github.com/gogs/git-module to v1.8.9 ([#165](https://github.com/jkrivas/k8s-ha-git-sync/issues/165)) ([f169864](https://github.com/jkrivas/k8s-ha-git-sync/commit/f16986439a083c6c99d3deec47c05f5a78be5bb2))
+* **deps:** update module github.com/prometheus/client_golang to v1.24.1 ([#167](https://github.com/jkrivas/k8s-ha-git-sync/issues/167)) ([21bea17](https://github.com/jkrivas/k8s-ha-git-sync/commit/21bea172a7608c47332aa5b1d9e1a5f786f044a4))
+* **deps:** update module github.com/sirupsen/logrus to v1.10.2 ([#171](https://github.com/jkrivas/k8s-ha-git-sync/issues/171)) ([e54acf6](https://github.com/jkrivas/k8s-ha-git-sync/commit/e54acf6e114b409f8c1e60fa6b158e9bbab6cfd4))
+* **deps:** update module github.com/urfave/cli/v3 to v3.11.0 ([#174](https://github.com/jkrivas/k8s-ha-git-sync/issues/174)) ([ac89843](https://github.com/jkrivas/k8s-ha-git-sync/commit/ac898430dab9a82fbd1687892741731c8cfb0a20))
+
 ## [1.0.16](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.15...v1.0.16) (2026-07-10)
 
 
