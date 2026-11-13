@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.19](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.18...v1.0.19) (2026-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update golang docker tag to v1.27.4 ([#188](https://github.com/jkrivas/k8s-ha-git-sync/issues/188)) ([3b40f24](https://github.com/jkrivas/k8s-ha-git-sync/commit/3b40f244e0de2edb2b563ae9f9985983aec9f7b1))
+* **deps:** update kubernetes monorepo to v0.37.2 ([#186](https://github.com/jkrivas/k8s-ha-git-sync/issues/186)) ([e40a94e](https://github.com/jkrivas/k8s-ha-git-sync/commit/e40a94ec5759a23d20f8898f213407c1f809be65))
+
 ## [1.0.18](https://github.com/jkrivas/k8s-ha-git-sync/compare/v1.0.17...v1.0.18) (2026-10-23)
 
 
