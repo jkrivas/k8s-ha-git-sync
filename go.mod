@@ -3,7 +3,7 @@ module github.com/jkrivas/k8s-ha-git-sync
 go 1.27.0
 
 require (
-	github.com/gogs/git-module v1.8.9
+	github.com/gogs/git-module v1.8.10
 	github.com/prometheus/client_golang v1.25.0
 	github.com/sirupsen/logrus v1.10.2
 	github.com/urfave/cli/v3 v3.14.0
